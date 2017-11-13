@@ -87,8 +87,7 @@ function load(done) {
       const notes = JSON.parse(data)
       done(null, notes)
     } catch (err) {
-      // done(new Error('Cannot parse JSON data.'))
-      done(err)      
+      done(new Error('Cannot parse JSON data.'))
     }
   })
 }
